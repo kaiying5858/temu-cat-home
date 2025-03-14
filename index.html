@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat House Select - Find the Perfect Home for Your Cat</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 使用Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20 0C9 0 0 9 0 20s9 20 20 20 20-9 20-20S31 0 20 0zm0 36c-8.8 0-16-7.2-16-16S11.2 4 20 4s16 7.2 16 16-7.2 16-16 16z" fill="#FF6B6B"/>
+                    <path d="M28 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-16 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm8 12c3.3 0 6-2.7 6-6h-12c0 3.3 2.7 6 6 6z" fill="#FF6B6B"/>
+                </svg>
+                <h1>Cat House Select</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active" data-i18n="home">Home</a>
+                <a href="#products" class="nav-link" data-i18n="products">Products</a>
+                <a href="about.html" class="nav-link" data-i18n="aboutUs">About Us</a>
+                <a href="privacy.html" class="nav-link" data-i18n="privacy">Privacy Policy</a>
+                <button class="lang-switch" onclick="toggleLanguage()" data-i18n="switchLang">中文</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="images/pexels-453689032-15529519.jpg" alt="Happy cat in a cozy bed">
+        <div class="banner-overlay">
+            <h2 data-i18n="bannerTitle">Find the Perfect Home for Every Cat</h2>
+            <p data-i18n="bannerSubtitle">Selected Comfortable Cat Beds for Your Beloved Pets</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="products" id="products">
+            <div class="product-list">
+                <!-- 产品1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html?_oak_mp_inf=EJecrr2m1ogBGiA5MzkwODhiZjkyOGY0YjhkYmFmMmE3MThjNDcxOWM4ZCC%2Bx7WD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F333f84bd-a619-412b-873e-85bf9800410d.jpg&spec_gallery_id=2181603848&refer_page_sn=10032&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MzQ0NA&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=goods&refer_page_id=10032_1741941831612_5e9qsidxay&is_back=1" target="_blank">
+                            <img src="images/1.webp" alt="豪华猫窝" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product1">豪华多层猫窝</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">55</span>
+                                <span class="decimal">.46</span>
+                            </div>
+                            <span class="original-price">$110.92</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model1">Feandrea 66.1/44.1</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material1">主要材质木纤维板</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors1">果冻粉、奶油白、浅灰、烟灰色、浅褐色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight1">0-15kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html?_oak_mp_inf=EJecrr2m1ogBGiA5MzkwODhiZjkyOGY0YjhkYmFmMmE3MThjNDcxOWM4ZCC%2Bx7WD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F333f84bd-a619-412b-873e-85bf9800410d.jpg&spec_gallery_id=2181603848&refer_page_sn=10032&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MzQ0NA&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=goods&refer_page_id=10032_1741941831612_5e9qsidxay&is_back=1" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html?_oak_mp_inf=ENfcu5qm1ogBGiBjZWYyNDNhOTAwOGQ0YmNkODkyMDNkNTA2N2NjNDQyOSCSmK6D2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F7518cbec53d35efd3d8d0001e3a86bff.jpg&spec_gallery_id=2008572741&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODA5&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=search_result&refer_page_id=10009_1741884647750_7nbekaycz5" target="_blank">
+                            <img src="images/2.webp" alt="猫咪透气床" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product2">猫咪透气床</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">8</span>
+                                <span class="decimal">.09</span>
+                            </div>
+                            <span class="original-price">$16.18</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model2">猫咪透气床</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart2()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material2">主材料合金钢，填充材料其他</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors2">粉色、灰色、蓝色、橙色、咖啡色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight2">0-10kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html?_oak_mp_inf=ENfcu5qm1ogBGiBjZWYyNDNhOTAwOGQ0YmNkODkyMDNkNTA2N2NjNDQyOSCSmK6D2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F7518cbec53d35efd3d8d0001e3a86bff.jpg&spec_gallery_id=2008572741&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODA5&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=search_result&refer_page_id=10009_1741884647750_7nbekaycz5" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/cat-bed-round-pet-bed-for-small-dogs-cat-sleeping-beds-soft--mattress-removable-pet-mat-cat-sofa-for-outdoor-indoor-cat-g-601099519457473.html?_oak_mp_inf=EMHx05qm1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSCPi6SD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F441125fb3f839c7e20814cd08d977bb2.jpg&spec_gallery_id=2010321442&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MjEzOQ&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank">
+                            <img src="images/3.webp" alt="柔软圆形猫床" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product3">柔软圆形猫床</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">21</span>
+                                <span class="decimal">.39</span>
+                            </div>
+                            <span class="original-price">$42.78</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model3">柔软圆形猫床</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart3()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material3">主要材质涤纶</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors3">咖啡熊、蓝猫</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight3">0-12kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/cat-bed-round-pet-bed-for-small-dogs-cat-sleeping-beds-soft--mattress-removable-pet-mat-cat-sofa-for-outdoor-indoor-cat-g-601099519457473.html?_oak_mp_inf=EMHx05qm1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSCPi6SD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F441125fb3f839c7e20814cd08d977bb2.jpg&spec_gallery_id=2010321442&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MjEzOQ&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/2-in-1-cat-scratcher-cozy-bed--cardboard-interactive-playhouse-with-hanging-toys-comfortable-all-year-round-ideal-for-indoor-cats-leisure--house-g-601099868151601.html?_oak_mp_inf=ELG%2B9sCn1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSDppZyD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Ffancy%2F2024-12-17%2F0aa376c4-eea1-462d-bbd0-68783af68521.jpg&spec_gallery_id=3232766245&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTY2Ng&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank">
+                            <img src="images/4.webp" alt="猫抓板木屋" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product4">猫抓板木屋</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">16</span>
+                                <span class="decimal">.66</span>
+                            </div>
+                            <span class="original-price">$33.32</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model4">猫抓板木屋</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart4()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material4">主要材质纸板</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors4">棕色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight4">0-12kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/2-in-1-cat-scratcher-cozy-bed--cardboard-interactive-playhouse-with-hanging-toys-comfortable-all-year-round-ideal-for-indoor-cats-leisure--house-g-601099868151601.html?_oak_mp_inf=ELG%2B9sCn1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSDppZyD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Ffancy%2F2024-12-17%2F0aa376c4-eea1-462d-bbd0-68783af68521.jpg&spec_gallery_id=3232766245&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTY2Ng&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/hanging-cat-swing-bed-woven-rope-cat-hammock-basket-comfortable-pet-cradle-pet-swing-bed-for-indoor-cats-g-601099522344623.html?_oak_mp_inf=EK%2BNhJym1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSCZ3pWD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2Fd31a94c6fb856ffced13bce05d195e65.jpg&spec_gallery_id=2017865367&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODQ5&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank">
+                            <img src="images/5.webp" alt="悬挂式猫秋千床" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product5">悬挂式猫秋千床</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">8</span>
+                                <span class="decimal">.49</span>
+                            </div>
+                            <span class="original-price">$16.98</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model5">悬挂式猫秋千床</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart5()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material5">亚麻</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors5">亚麻色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight5">0-8kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/hanging-cat-swing-bed-woven-rope-cat-hammock-basket-comfortable-pet-cradle-pet-swing-bed-for-indoor-cats-g-601099522344623.html?_oak_mp_inf=EK%2BNhJym1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSCZ3pWD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2Fd31a94c6fb856ffced13bce05d195e65.jpg&spec_gallery_id=2017865367&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODQ5&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/pet-dog-bed--paw-shape-warm-dog-bed-cushion-pet-sleep-mat-sofa-dog-house-g-601099515106340.html?_oak_mp_inf=EKSoypim1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSDito2D2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2Fff382e5cac81b8e591659d08d1b7eec1.jpg&spec_gallery_id=20338319&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTIxMg&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank">
+                            <img src="images/6.webp" alt="柔软长毛猫窝" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product6">柔软长毛猫窝</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">11</span>
+                                <span class="decimal">.93</span>
+                            </div>
+                            <span class="original-price">$23.86</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model6">柔软长毛猫窝</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart6()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material6">聚酯纤维</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors6">浅灰、淡咖啡、皮粉</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight6">0-10kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/pet-dog-bed--paw-shape-warm-dog-bed-cushion-pet-sleep-mat-sofa-dog-house-g-601099515106340.html?_oak_mp_inf=EKSoypim1ogBGiBlNDZjNDBhMjY5M2I0OTJhYTE3Njk3NDFlNDdhZTg4NSDito2D2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2Fff382e5cac81b8e591659d08d1b7eec1.jpg&spec_gallery_id=20338319&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTIxMg&search_key=cat&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/-cat-tree-54in-cat-tower-condo-with-2-condos-2-dangling-balls-3-scratching-posts-large-cat-house-for-for-kittens-cats-g-602989968344899.html?_oak_mp_inf=EMOO99aojYkBGiA0NmUwNDRjYTcwMjc0Mzg2YjFjNjJhNzBlNGJhNGI4ZiDyyIWD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Flocal-goods-image%2F1f23583aa0%2Fba3ca8f4-74f7-48e9-b93a-bc95b0fa6e2b_1000x1000.jpeg&spec_gallery_id=2180655401&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=NDQ2MQ&search_key=cat%20tower&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank">
+                            <img src="images/7.webp" alt="猫塔公寓" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product7">猫塔公寓</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">44</span>
+                                <span class="decimal">.61</span>
+                            </div>
+                            <span class="original-price">$89.22</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model7">猫塔公寓</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart7()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material7">主体材质刨花板</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors7">浅灰色、绿色、粉红色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight7">0-15kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/-cat-tree-54in-cat-tower-condo-with-2-condos-2-dangling-balls-3-scratching-posts-large-cat-house-for-for-kittens-cats-g-602989968344899.html?_oak_mp_inf=EMOO99aojYkBGiA0NmUwNDRjYTcwMjc0Mzg2YjFjNjJhNzBlNGJhNGI4ZiDyyIWD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Flocal-goods-image%2F1f23583aa0%2Fba3ca8f4-74f7-48e9-b93a-bc95b0fa6e2b_1000x1000.jpeg&spec_gallery_id=2180655401&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=NDQ2MQ&search_key=cat%20tower&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1741884024765_68yikk3vjd&_x_sessn_id=umapsbl5px" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/1pc-pet-bed-house-for-cats-removable-and-washable-cat-house-winter-warm-cat-bed-soft-and-comfortable-puppy--g-601099536149393.html?_oak_mp_inf=EJHXzqKm1ogBGiAzMzYzMjA5YjMxN2I0MTgzYTJkOWU0ZGE3ZjUzNjQyOCDZq8yC2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F57f35c3757992610983ce7d0461d5ab4.jpg&spec_gallery_id=2062806910&refer_page_sn=10032&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODM5&search_key=cat%20house&refer_page_el_sn=200049&refer_page_name=goods&refer_page_id=10032_1741883256602_aras726qo2&_x_sessn_id=4ui22j7cqd&is_back=1" target="_blank">
+                            <img src="images/8.webp" alt="可拆卸清洗猫屋" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product8">可拆卸清洗猫屋</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">8</span>
+                                <span class="decimal">.39</span>
+                            </div>
+                            <span class="original-price">$16.78</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model8">可拆卸清洗猫屋</span></li>
+                                <li><span data-i18n="size">尺寸</span>: 
+                                    <span class="size-chart-link" onclick="openSizeChart8_1()" data-i18n="sizeChart1">尺寸图1</span> | 
+                                    <span class="size-chart-link" onclick="openSizeChart8_2()" data-i18n="sizeChart2">尺寸图2</span> | 
+                                    <span class="size-chart-link" onclick="openSizeChart8_3()" data-i18n="sizeChart3">尺寸图3</span>
+                                </li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material8">涤纶</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors8">棕色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight8">0-10kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/1pc-pet-bed-house-for-cats-removable-and-washable-cat-house-winter-warm-cat-bed-soft-and-comfortable-puppy--g-601099536149393.html?_oak_mp_inf=EJHXzqKm1ogBGiAzMzYzMjA5YjMxN2I0MTgzYTJkOWU0ZGE3ZjUzNjQyOCDZq8yC2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F57f35c3757992610983ce7d0461d5ab4.jpg&spec_gallery_id=2062806910&refer_page_sn=10032&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODM5&search_key=cat%20house&refer_page_el_sn=200049&refer_page_name=goods&refer_page_id=10032_1741883256602_aras726qo2&_x_sessn_id=4ui22j7cqd&is_back=1" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品9 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/cat-window-perch-cat-hammock--window-mounted-cat-bed-g-601099516787632.html?_oak_mp_inf=ELD3sJmm1ogBGiAzOTg0ZDc1NTRmYTE0Y2YwYTU1ZmVkOWE2YjMxZGRmYyDl98OD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F13c4517c172018c864ddf2d7996f7629.jpg&spec_gallery_id=23480334&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODA3&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=search_result&refer_page_id=10009_1741884647750_7nbekaycz5" target="_blank">
+                            <img src="images/9.webp" alt="窗台猫咪吊床" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product9">窗台猫咪吊床</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">8</span>
+                                <span class="decimal">.07</span>
+                            </div>
+                            <span class="original-price">$16.14</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model9">窗台猫咪吊床</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart9()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material9">涤纶</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors9">蓝色、灰色、黑色、紫色、粉色</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight9">0-10kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/cat-window-perch-cat-hammock--window-mounted-cat-bed-g-601099516787632.html?_oak_mp_inf=ELD3sJmm1ogBGiAzOTg0ZDc1NTRmYTE0Y2YwYTU1ZmVkOWE2YjMxZGRmYyDl98OD2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F13c4517c172018c864ddf2d7996f7629.jpg&spec_gallery_id=23480334&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=ODA3&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=search_result&refer_page_id=10009_1741884647750_7nbekaycz5" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+
+                <!-- 产品10 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="https://www.temu.com/cat-cave-cat--bed-for-indoor-cats-detachable-washable-large-donut-cat-bed-winter-warm-cat-house-g-601099522403073.html?_oak_mp_inf=EIHWh5ym1ogBGiBkZWU0Y2YwNDMwZDI0NTU5YWY2YWQ2N2Y2ODY0OTRiOCC60b6D2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F41ed76e508fb5326bbfb8fa8da17ed41.jpg&spec_gallery_id=2018225531&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTM5OQ&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=search_result&refer_page_id=10009_1741884647750_7nbekaycz5&is_back=1" target="_blank">
+                            <img src="images/10.webp" alt="隧道式猫窝" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product10">隧道式猫窝</h3>
+                        <div class="price-tag">
+                            <div class="price-amount">
+                                <span class="currency">$</span>
+                                <span class="main">13</span>
+                                <span class="decimal">.99</span>
+                            </div>
+                            <span class="original-price">$27.98</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 data-i18n="specifications">产品规格</h4>
+                            <ul>
+                                <li><span data-i18n="model">型号</span>: <span data-i18n="model10">隧道式猫窝</span></li>
+                                <li><span data-i18n="size">尺寸</span>: <span class="size-chart-link" onclick="openSizeChart10()" data-i18n="sizeChart">查看尺寸图</span></li>
+                                <li><span data-i18n="material">材质</span>: <span data-i18n="material10">涤纶</span></li>
+                                <li><span data-i18n="color">颜色</span>: <span data-i18n="colors10">深灰色、粉色、浅灰</span></li>
+                                <li><span data-i18n="weight">适用体重</span>: <span data-i18n="weight10">0-10kg</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.temu.com/cat-cave-cat--bed-for-indoor-cats-detachable-washable-large-donut-cat-bed-winter-warm-cat-house-g-601099522403073.html?_oak_mp_inf=EIHWh5ym1ogBGiBkZWU0Y2YwNDMwZDI0NTU5YWY2YWQ2N2Y2ODY0OTRiOCC60b6D2TI%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F41ed76e508fb5326bbfb8fa8da17ed41.jpg&spec_gallery_id=2018225531&refer_page_sn=10009&refer_source=0&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTM5OQ&search_key=cat&refer_page_el_sn=200049&_x_sessn_id=umapsbl5px&refer_page_name=search_result&refer_page_id=10009_1741884647750_7nbekaycz5&is_back=1" target="_blank" class="buy-button" data-i18n="buyNow">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="copyright">© 2024 Cat Home. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link" data-i18n="privacy-policy">隐私政策</a>
+            <a href="#" class="footer-link" data-i18n="terms">使用条款</a>
+        </div>
+    </footer>
+
+    <!-- 添加尺寸图弹窗 -->
+    <div id="sizeChartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/1-1.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第二个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart2()">&times;</span>
+            <img src="images/2-2.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第三个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart3()">&times;</span>
+            <img src="images/3-3.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第四个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart4()">&times;</span>
+            <img src="images/4-4.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第五个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart5()">&times;</span>
+            <img src="images/5-5.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第六个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart6()">&times;</span>
+            <img src="images/6-6.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第七个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart7()">&times;</span>
+            <img src="images/7-7.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第八个产品的尺寸图弹窗1 -->
+    <div id="sizeChartModal8_1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart8_1()">&times;</span>
+            <img src="images/8-1.webp" alt="产品尺寸图1" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第八个产品的尺寸图弹窗2 -->
+    <div id="sizeChartModal8_2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart8_2()">&times;</span>
+            <img src="images/8-2.webp" alt="产品尺寸图2" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第八个产品的尺寸图弹窗3 -->
+    <div id="sizeChartModal8_3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart8_3()">&times;</span>
+            <img src="images/8-3.webp" alt="产品尺寸图3" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第九个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart9()">&times;</span>
+            <img src="images/9-9.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- 添加第十个产品的尺寸图弹窗 -->
+    <div id="sizeChartModal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeChart10()">&times;</span>
+            <img src="images/10-10.webp" alt="产品尺寸图" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1001;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fff;
+        margin: 5% auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .size-chart-link {
+        color: var(--primary-color);
+        text-decoration: underline;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .size-chart-link:hover {
+        color: #ff5252;
+    }
+
+    .lang-switch {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    .lang-switch:hover {
+        background-color: #ff5252;
+    }
+    </style>
+
+    <script src="i18n.js"></script>
+    <script>
+    // 尺寸图弹窗功能
+    var modal = document.getElementById("sizeChartModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    function openSizeChart() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target.className === "modal") {
+            event.target.style.display = "none";
+        }
+    }
+
+    // 第二个产品的尺寸图弹窗功能
+    function openSizeChart2() {
+        document.getElementById("sizeChartModal2").style.display = "block";
+    }
+
+    function closeSizeChart2() {
+        document.getElementById("sizeChartModal2").style.display = "none";
+    }
+
+    // 第三个产品的尺寸图弹窗功能
+    function openSizeChart3() {
+        document.getElementById("sizeChartModal3").style.display = "block";
+    }
+
+    function closeSizeChart3() {
+        document.getElementById("sizeChartModal3").style.display = "none";
+    }
+
+    // 第四个产品的尺寸图弹窗功能
+    function openSizeChart4() {
+        document.getElementById("sizeChartModal4").style.display = "block";
+    }
+
+    function closeSizeChart4() {
+        document.getElementById("sizeChartModal4").style.display = "none";
+    }
+
+    // 第五个产品的尺寸图弹窗功能
+    function openSizeChart5() {
+        document.getElementById("sizeChartModal5").style.display = "block";
+    }
+
+    function closeSizeChart5() {
+        document.getElementById("sizeChartModal5").style.display = "none";
+    }
+
+    // 第六个产品的尺寸图弹窗功能
+    function openSizeChart6() {
+        document.getElementById("sizeChartModal6").style.display = "block";
+    }
+
+    function closeSizeChart6() {
+        document.getElementById("sizeChartModal6").style.display = "none";
+    }
+
+    // 第七个产品的尺寸图弹窗功能
+    function openSizeChart7() {
+        document.getElementById("sizeChartModal7").style.display = "block";
+    }
+
+    function closeSizeChart7() {
+        document.getElementById("sizeChartModal7").style.display = "none";
+    }
+
+    // 第八个产品的尺寸图弹窗功能1
+    function openSizeChart8_1() {
+        document.getElementById("sizeChartModal8_1").style.display = "block";
+    }
+
+    function closeSizeChart8_1() {
+        document.getElementById("sizeChartModal8_1").style.display = "none";
+    }
+
+    // 第八个产品的尺寸图弹窗功能2
+    function openSizeChart8_2() {
+        document.getElementById("sizeChartModal8_2").style.display = "block";
+    }
+
+    function closeSizeChart8_2() {
+        document.getElementById("sizeChartModal8_2").style.display = "none";
+    }
+
+    // 第八个产品的尺寸图弹窗功能3
+    function openSizeChart8_3() {
+        document.getElementById("sizeChartModal8_3").style.display = "block";
+    }
+
+    function closeSizeChart8_3() {
+        document.getElementById("sizeChartModal8_3").style.display = "none";
+    }
+
+    // 第九个产品的尺寸图弹窗功能
+    function openSizeChart9() {
+        document.getElementById("sizeChartModal9").style.display = "block";
+    }
+
+    function closeSizeChart9() {
+        document.getElementById("sizeChartModal9").style.display = "none";
+    }
+
+    // 第十个产品的尺寸图弹窗功能
+    function openSizeChart10() {
+        document.getElementById("sizeChartModal10").style.display = "block";
+    }
+
+    function closeSizeChart10() {
+        document.getElementById("sizeChartModal10").style.display = "none";
+    }
+
+    // Language switching functionality
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        updateContent();
+        document.documentElement.lang = currentLang;
+    }
+
+    function updateContent() {
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[currentLang][key]) {
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.placeholder = translations[currentLang][key];
+                } else {
+                    element.textContent = translations[currentLang][key];
+                }
+            }
+        });
+
+        // Update dynamic content
+        document.title = currentLang === 'en' ? 
+            'Cat House Select - Find the Perfect Home for Your Cat' : 
+            '猫窝精选 - 为您的猫咪打造温馨之家';
+        
+        document.querySelector('.logo h1').textContent = 
+            currentLang === 'en' ? 'Cat House Select' : '猫窝精选';
+    }
+
+    // Initialize with English
+    document.addEventListener('DOMContentLoaded', function() {
+        updateContent();
+    });
+    </script>
+</body>
+</html> 

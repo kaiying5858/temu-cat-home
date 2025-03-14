@@ -1,0 +1,354 @@
+/* 全局样式 */
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --text-color: #2C3E50;
+    --background-color: #F8F9FA;
+    --card-background: #FFFFFF;
+    --card-shadow: 0 8px 16px rgba(255, 107, 107, 0.1);
+    --warm-gradient: linear-gradient(45deg, #FF6B6B, #FFB6C1);
+    --soft-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* 导航栏样式 */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Banner样式 */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transform-origin: center;
+    animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1800px;
+    padding: 2.8rem 9rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+[lang="en"] .banner-overlay h2 {
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[lang="en"] .banner-overlay p {
+    font-size: 1.3em;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-weight: 300;
+    opacity: 0.95;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 产品列表样式 */
+.products {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 40%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price-amount {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discount-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.product-specs {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.product-specs h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.product-specs ul {
+    list-style: none;
+}
+
+.product-specs li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: fit-content;
+}
+
+.buy-button:hover {
+    background-color: #ff5252;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+[lang="en"] .footer-link {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .product-info {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+    .banner-overlay {
+        width: 98%;
+        padding: 2.5rem 6rem;
+        max-width: none;
+    }
+    
+    [lang="en"] .banner-overlay h2 {
+        font-size: 2.4em;
+        margin-bottom: 1rem;
+    }
+    
+    [lang="en"] .banner-overlay p {
+        font-size: 1.2em;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-overlay {
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+    
+    [lang="en"] .banner-overlay h2 {
+        font-size: 1.8em;
+        margin-bottom: 0.8rem;
+    }
+    
+    [lang="en"] .banner-overlay p {
+        font-size: 1.1em;
+        max-width: 100%;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    .buy-button {
+        width: 100%;
+    }
+} 
